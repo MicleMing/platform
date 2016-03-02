@@ -1,0 +1,45 @@
+/**
+ * @file nav
+ * @author lanmingming
+ * @date 2016-1-7
+ */
+
+.nav-tabs {
+	&::after,
+	&::before{
+		display: table;
+		content: " ";
+		clear: both;
+	}
+	list-style: none;
+	font-size: @font-size-level-3;
+
+	>li{
+		float: left;
+		position: relative;
+		height: 36px;
+		min-width: 88px;
+		text-align: center;
+		line-height: 36px;
+		border-bottom: none;
+		margin-bottom: 1px;
+		a{
+			width: 100%;
+			display: block;
+			border: 1px solid @theme-border-color;
+			border-bottom: none;
+			border-right: none;
+		}
+		a.active{
+			position: absolute;
+			background: #fff;
+			font-weight: 600;
+			border-top: 2px solid @theme-color;
+		}
+		&:last-child{
+			a{
+				border-right: 1px solid @theme-border-color;
+			}
+		}
+	}
+}

@@ -1,0 +1,47 @@
+/**
+ * @file input
+ * @author lanmingming
+ * @date 2015-12-25
+ */
+.anti-spider-input(@color: @theme-color, @w: 400px, @h: 34px) {
+    width: @w;
+    height: @h;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    .box-sizing(border-box);
+    .box-shadow(inset 0 1px 1px rgba(0, 0, 0, .075));
+    -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+
+    line-height: @line-height-base;
+    font-size: @font-size-base;
+    color: #555;
+    &.active,
+    &:focus,
+    &:active {
+        outline: 0;
+        border-color: @color;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px fade(@color, 44%);
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px fade(@color, 44%);
+    }
+}
+
+
+.aiti-spider-input-file(@bg-color: @theme-color; @border-radius: 2px) {
+    display: inline-block;
+    position: relative;
+    padding: 6px 10px;
+    background-color: @bg-color;
+    border-radius: @border-radius;
+
+    input[type="file"] {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,23 @@
+/**
+ * @file 路径导航
+ * @author lanmingming@baidu.com
+ * @date 2016-1-7
+ */
+.breadcrumb {
+    padding: 8px 15px;
+    list-style: none;
+    > li {
+        display: inline-block;
+        color: @theme-color;
+    }
+    > li:not(:first-child) {
+        &:before {
+            padding: 0 5px;
+            color: #000;
+            content: ">";
+        }
+    }
+    .active {
+        color: #777;
+    }
+}
