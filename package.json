@@ -1,5 +1,5 @@
 {
-  "name": "platform",
+  "name": <%=name%>,
   "version": "1.0.0",
   "description": "platform based on vue",
   "main": "gulpfile.js",
