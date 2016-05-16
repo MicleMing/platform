@@ -1,0 +1,18 @@
+{
+	"component": {
+		"desc": "Create a new Vue Component in a `.vue` format",
+		"file": "component.vue",
+		"type": ".vue",
+		"example": "vue make component(ct) components/CounterWidget"
+	},
+	"page": {
+		"desc": "Create a new page in a `.vue` format",
+		"file": "page.vue",
+		"type": ".vue",
+		"example": "vue make page pages/CounterPage"
+	},
+	"short": {
+		"ct": "component",
+		"pg": "page"
+	}
+}
